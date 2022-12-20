@@ -1,0 +1,56 @@
+html {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+}
+
+header, main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header a:link {
+    text-decoration: none;
+    color: rgb(93,95,121);
+}
+
+header a:hover {
+    color: rgb(245, 157, 35);
+}
+
+.contenedor-flexible {
+    display: flex;
+    flex: 200px;
+    flex-wrap: wrap;
+}
+
+img {
+    object-fit: cover;
+}
+
+footer {
+    color: rgb(255,255,255);
+    background-color: rgb(0,0,0);
+}
+
+footer a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+    color: rgb(245, 157, 35);
+}
+
+footer button {
+    background-color: rgb(240, 93, 80);
+    color: rgb(255, 255, 255);
+}
