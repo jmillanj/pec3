@@ -8,12 +8,9 @@ html {
     margin: 0;
 }
 
-body {
-    width: 100%;
-}
 
-header, main{
-    width: 90%;
+header, main {
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -26,14 +23,21 @@ header a:hover {
     color: rgb(245, 157, 35);
 }
 
-.contenedor-flexible {
+.contenedor {
     display: flex;
-    flex: 200px;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-img {
-    object-fit: cover;
+.contenedor>div {
+    border: 1px solid;
+    flex: 1 200px;
+}
+
+.logo {
+    background: rgb(240, 93, 80);
+    align-items: center;
 }
 
 footer {
