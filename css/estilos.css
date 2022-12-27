@@ -1,26 +1,57 @@
 html {
     font-family: 'Inter', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
 }
 
 * {
     padding: 0;
     margin: 0;
+    line-height: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 800;
+    text-align: center;
+}
 
 header, main {
-    width: 95%;
     margin: 0 auto;
+    padding: 20px
 }
 
-header a:link {
-    text-decoration: none;
+.logo {
+    margin-bottom: 20px;
+}
+
+.link-grey a:link, .link-grey a:visited {
     color: rgb(93,95,121);
 }
 
-header a:hover {
+.link-grey a:hoover {
     color: rgb(245, 157, 35);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.logo img {
+    margin-right: 3px;
+}
+
+.link-black a:link, a:visited {
+    color: rgb(0,0,0);
+}
+
+li {
+    list-style: none;
+    font-weight: 800;
 }
 
 .contenedor {
@@ -31,13 +62,55 @@ header a:hover {
 }
 
 .contenedor>div {
-    border: 1px solid;
     flex: 1 200px;
 }
 
-.logo {
+.index-box1, .index-box2 {
+    padding: 20px 10px;
+    
+}
+
+.index-box1 {
     background: rgb(240, 93, 80);
-    align-items: center;
+    text-align: center;
+}
+
+.index-box2 {
+    background: rgb(245, 157, 35);
+    margin-bottom: 40px;
+}
+
+.index-box2>h2 {
+    margin-bottom: 20px;
+}
+
+.link-orange {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.link-orange a:link, .link-orange a:visited {
+    font-size: 0.8rem;
+    color: rgb(245, 157, 35);
+}
+
+.mujer-referente {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.disciplina {
+    font-size: 0.8rem;
+}
+
+.nombre {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
 }
 
 footer {
@@ -45,12 +118,11 @@ footer {
     background-color: rgb(0,0,0);
 }
 
-footer a:link {
-    text-decoration: none;
+.link-white a:link {
     color: rgb(255, 255, 255);
 }
 
-footer a:hover {
+.link-white a:hover {
     color: rgb(245, 157, 35);
 }
 
