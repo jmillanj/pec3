@@ -1,140 +1,541 @@
+/* La fuente Gill Sans MT se usa en las imagenes en formato svg "logo-ciencia-tecnologia.svg" y "logo-ciencia-tecnologia-white.svg"  */
 @font-face {
     font-family: "Gill Sans MT";
     src: url("https://fonts.cdnfonts.com/s/56141/GIL_____.woff");
 }
 
+/**                  Ajustes iniciales                  **/
 html {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    line-height: 1.5rem;;
 }
 
 * {
     padding: 0;
     margin: 0;
-    line-height: 1.5rem;
+}
+
+header, main, footer {
+    padding: 15px;
+}
+
+li {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
 }
 
-h2 {
-    font-weight: 800;
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
     text-align: center;
-}
-
-header, main {
-    margin: 0 auto;
-    padding: 20px
-}
-
-.logo {
+    font-weight: 800;
+    line-height: 1em;
     margin-bottom: 20px;
 }
 
-.logo img {
-    font-family:'Gill Sans MT';
-}
-
-.link-grey a:link, .link-grey a:visited {
-    color: rgb(93,95,121);
-}
-
-.link-grey a:hoover {
-    color: rgb(245, 157, 35);
-}
-
-header {
+h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
     text-align: center;
-    margin-bottom: 60px;
+}
+/**                    Fin Ajustes iniciales               **/
+
+
+/**                          Header                       **/
+header {
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.logo img {
-    margin-right: 3px;
+#logo img {
+    margin-right: 5px;
 }
 
-.link-black a:link, a:visited {
+#logo a:link, a:visited {
     color: rgb(0,0,0);
-}
-
-li {
-    list-style: none;
     font-weight: 800;
 }
 
-.contenedor {
+header>nav {
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 1.7rem;
+}
+
+header>nav a:link, header>nav a:visited {
+    color: rgb(93,95,121);
+    font-weight: 800;
+}
+
+header>nav a:hover {
+    color: rgb(245, 157, 35);
+}
+
+@media screen and (min-width: 720px) {
+    header, main {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        
+    header li {
+        display: inline;
+        margin-left: 35px;
+    }
+}
+/**                        Fin Header               **/
+
+
+
+/**                       Footer                    **/
+footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(255,255,255);
+    background-color: rgb(0,0,0);
+}
+
+footer a:link, footer a:visited {
+    color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+    color: rgb(245, 157, 35);
+}
+
+footer p.correo {
+    font-size: 0.8rem;
+}
+
+footer p.boletin {
+    margin: 25px 0px;
+}
+
+footer input[type="email"] {
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    background: black;
+    border: 0;
+    width: 100%;
+    max-width: 450px;
+}
+
+hr {
+    color: white;
+    width: 100%;
+    max-width: 450px;
+    margin: 10px auto;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+footer button {
+    background-color: rgb(240, 93, 80);
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+    padding: 8px 10px;
+    border: 0;
+}
+
+footer ul {
+    margin: 20px auto;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+#copyright {
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+
+#copyright p {
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 720px) {
+    footer li {
+        display: inline;
+        margin-left: 15px;
+    }
+}
+
+
+/**                     Fin Footer                **/
+
+
+
+/**                    index.html                 **/
+.box-container {
+    margin-bottom: 50px;
+}
+
+.box1 {
+    background: rgb(240, 93, 80);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logo-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.box2 {
+    background: rgb(245, 157, 35);
+    color: black;
+    padding: 15px 10px 30px 10px;
+}
+
+.box2 > p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+#verLista {
+    text-align: center;
+}
+
+#verLista a:link, #verLista a:visited {
+    font-size: 0.8rem;
+    color: rgb(245, 157, 35);
+}
+
+#verLista a:hover {
+    color: rgb(93, 95, 121);
+}
+
+.index-referente-container {
+    margin: 20px 0px 70px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.contenedor>div {
-    flex: 1 200px;
-}
-
-.index-box1, .index-box2 {
-    padding: 20px 10px;
-    
-}
-
-.index-box1 {
-    background: rgb(240, 93, 80);
-    text-align: center;
-}
-
-.index-box2 {
-    background: rgb(245, 157, 35);
-    margin-bottom: 40px;
-}
-
-.index-box2>h2 {
-    margin-bottom: 20px;
-}
-
-.link-orange {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.link-orange a:link, .link-orange a:visited {
-    font-size: 0.8rem;
-    color: rgb(245, 157, 35);
-}
-
-.mujer-referente {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.index-referente {
+    width: 100%;
+    margin-top: 5px;
     text-align: center;
     line-height: 2rem;
 }
 
-.disciplina {
+.index-referente .disciplina {
     font-size: 0.8rem;
+    line-height: 1rem;
 }
 
-.nombre {
+.index-referente .nombre {
     font-weight: 700;
 }
 
-img {
-    max-width: 100%;
+.index-referente a:link, .index-referente a:visited {
+    color: rgb(93, 95, 121);
 }
 
-footer {
-    color: rgb(255,255,255);
-    background-color: rgb(0,0,0);
-}
-
-.link-white a:link {
-    color: rgb(255, 255, 255);
-}
-
-.link-white a:hover {
+.index-referente a:hover {
     color: rgb(245, 157, 35);
 }
 
-footer button {
-    background-color: rgb(240, 93, 80);
-    color: rgb(255, 255, 255);
+@media screen and (min-width: 700px) {          /* Diseño para tablets (> 700 px de ancho)   */
+    .index-referente {
+        width: 45%;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .index-referente .nombre {
+        font-size: 0.9rem;
+    }
 }
+
+@media screen and (min-width: 1200px) {         /* Diseño para ordenadores (> 1200 px de ancho)   */
+    .box-container {
+        display: flex;
+    }
+
+    .box1 {
+        flex: 1;
+    }
+
+    .logo-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .box2 {
+        flex: 2;
+        padding: 60px 35px;
+    }
+
+    .box2 h2 {
+        font-size: 2.5rem;
+        text-align: left;
+        margin-bottom: 35px;
+    }
+
+    .index-referente {
+        width: 23%;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+}
+
+/**               fin index.html                **/
+
+
+
+
+/**                referentes.html               **/
+.referentes > nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.referentes > nav li {
+    display: inline;
+    color: rgb(245, 157, 35);
+    margin-left: 6px;
+}
+
+.referentes > nav li::before {              /* punto separador de los elementos del menu */
+    margin-left: -5px;
+    padding-right: 5px;
+    content:"\25CF";
+    font-size: 0.6em;
+    position: relative;
+    top: -0.2em;
+}
+
+.referentes > nav li:first-child::before {
+    content:"";
+}
+
+.referentes > nav a:link, .referentes > nav a:visited {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: rgb(245, 157, 35);
+}
+
+.referentes > nav a:hover {
+    color: rgb(93, 95, 121);
+}
+
+.referente {
+    margin-bottom: 40px;
+    color: rgb(93, 95, 121);
+}
+
+.referente .r-orden {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    color: rgb(240, 93, 80);
+    font-weight: 800;
+}
+
+.referente .r-disciplina, .referente .r-fecha {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.referente .r-nombre {
+    font-weight: 700;
+    line-height: 1rem;
+}
+
+.referente .r-imagen {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.referente .r-detalle, .r-enlace {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-top: 8px;
+}
+
+.referente .r-enlace a:link, .referente .r-enlace a:visited {
+    color:  rgb(245, 157, 35);
+}
+
+.referente .r-enlace a:hover {
+    color: rgb(93, 95, 121);
+}
+
+@media screen and (min-width: 700px) {          /* Diseño para tablets (> 700 px de ancho)   */
+    .referente {
+        display: flex;
+    }
+
+    .ref-1 {
+        flex: 1;
+        padding-top: 10px;
+        padding-right: 5px;
+    }
+
+    .ref-2 {
+        flex: 1;
+    }
+
+    .ref-3 {
+        flex: 2;
+        margin: auto 0px;
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {         /* Diseño para ordenadores (> 1200 px de ancho)   */
+    .referentes {
+        display: flex;
+    }
+
+    .referentes nav {
+        flex: 1;
+    }
+
+    .referentes > nav li::before {              /* punto separador de los elementos del menu */
+        content:"";
+    }
+
+    .referentes .referente-container {
+        flex: 4;
+    }
+
+    .referentes nav li {
+        display: block;
+        text-align: left;
+    }
+
+    .referente-container {
+        padding: 0px;
+    }
+}
+/**                     fin referentes.html                **/
+
+
+
+/**                      11-de-febrero.html                **/
+main > p {
+    font-size: 0.9rem;
+    color:rgb(93, 95, 121);
+    margin-top: 20px;
+}
+
+
+blockquote {
+    font-size: 0.9rem;
+    margin-top: 30px;
+    color: black;
+    background-color: rgb(227, 228, 230);
+    padding: 20px 20px;
+}
+
+blockquote .nota {
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+blockquote .nota .red {
+    color: rgb(240, 93, 80);
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+
+figure {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+figcaption {
+    font-size: 0.7rem;
+}
+
+
+@media screen and (min-width: 1200px) {
+    blockquote {
+        width: 80%;
+        margin: 20px auto;
+    }
+        
+    figure {
+        width: 60%;
+        margin: 30px auto;
+        margin-bottom: 60px;
+    }
+
+}
+/**                  fin 11-de-febrero.html                **/
+
+
+
+
+/**                     iniciativas.html                   **/
+dl {
+    color: rgb(93, 95, 121);
+}
+
+dt {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+dt::before {
+    margin-left: -10px;
+    padding-right: 10px;
+    content:"\25AA";
+    font-size: 3em;
+    position: relative;
+    top: 0.2em;
+    color: rgb(240, 93, 80);
+}
+
+dd {
+    font-size: 0.9rem;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+dd a:link, dd a:visited {
+    color: rgb(245, 157, 35);
+}
+
+dd a:hover {
+    color: rgb(93, 95, 121);
+}
+/**                     fin iniciativas.html                  **/
